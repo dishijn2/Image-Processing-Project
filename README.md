@@ -17,23 +17,23 @@ The framework is structured into four modules. First module is Video recording a
 
 #### METHODOLOGY
 Fire is distinguished utilizing fire designs with warmth Signature. Warmth mark is shading examples to speak to the fire. There are three channels are utilized to discover the warmth signature. They are:
-•	RGB filter
+1.	RGB filter
 RGB channel is used to Extract Red (R) Green (G) and Blue (B) segment of every pixel. And after that in each pixel two conditions are checked. They are: 
-	If R >G>B 
-	If R> Rt (Rt is the red edge an incentive between (0,255). This depends on light in the picture. 
+  -	If R >G>B
+  -	If R> Rt (Rt is the red edge an incentive between (0,255). This depends on light in the picture. 
 
-•	CieLAB filter
+2.	CieLAB filter
 cieLAB shading model are Highlights red, yellow and related hues like orange. For all pixels in the edge the mean estimation of L, A and B parts are distinguished. For each pixel four channels are utilized.
-	If L>L mean
-	If A>A mean  
-	If B>B mean 
-	If B>A mean
+  -	If L>L mean
+  -	If A>A mean  
+  -	If B>B mean 
+  -	If B>A mean
 
-•	RGB filter 2
+3.	RGB filter 2
 It functions admirably around evening time mode. In this technique the R, G, and B segments are contrasted and edge esteems. (rt=140, gt=100, bt=100) Three conditions are verified: 
-	R>rt
-	G>gt
-	B<b 
+  -	R>rt
+  -	G>gt
+  -	B<b 
 
 [Python code for fire detection](https://raw.githubusercontent.com/dishijn2/Image-Processing-Project/master/fire_detection.py)
 
